@@ -1,0 +1,31 @@
+o switch to using MSVC (Microsoft Visual Studio Compiler) in Visual Studio Code, you need to ensure that the correct compiler is selected and that the project is configured to use it. Here are the steps to switch to MSVC:
+
+Steps to Switch to MSVC in Visual Studio Code:
+Install Required Extensions:
+
+Ensure you have the CMake and CMake Tools extensions installed in Visual Studio Code.
+Optionally, install the C++ extension for better C++ support.
+Open Your Project in Visual Studio Code:
+
+Open Visual Studio Code.
+Open your project directory (the directory containing your CMakeLists.txt file).
+Set the VCPKG_TARGET_TRIPLET Environment Variable:
+
+For x64-windows:
+Configure the Project to Use MSVC:
+
+Press Ctrl+Shift+P to open the command palette.
+Type CMake: Select a Kit and select it.
+Choose the MSVC kit (e.g., Visual Studio 16 2019 or Visual Studio 17 2022).
+Configure the Project:
+
+Press Ctrl+Shift+P to open the command palette.
+Type CMake: Configure and select it.
+Build the Project:
+
+Press Ctrl+Shift+P to open the command palette.
+Type CMake: Build and select it.
+Run the Project:
+
+Press Ctrl+Shift+P to open the command palette.
+Type CMake: Run Without Debugging or CMake: Debug to run or debug your project.
